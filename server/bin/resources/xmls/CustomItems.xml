@@ -1,0 +1,47 @@
+﻿<Objects>
+<Object type="0x9852" id="Dual Daggers" legendary="true">
+<Class>Equipment</Class>
+<Item/>
+<Texture>
+  <File>lofiObj11</File>
+  <Index>0x00</Index>
+</Texture>
+<SlotType>2</SlotType>
+<Description>A sharp dagger made of steel.</Description>
+<RateOfFire>2</RateOfFire>
+<Sound>weapon/blunt_dagger</Sound>
+<Projectile>
+   <ObjectId>idekk</ObjectId>
+   <Speed>150</Speed>
+   <MinDamage>140</MinDamage>
+   <MaxDamage>165</MaxDamage>
+   <LifetimeMS>400</LifetimeMS>
+   <Amplitude>0.5</Amplitude>
+   <Frequency>0.3</Frequency>
+   <Size>100</Size>
+</Projectile>
+<NumProjectiles>1</NumProjectiles>
+<ArcGap>11</ArcGap>
+<ActivateOnEquip stat="0" amount="10">IncrementStat</ActivateOnEquip>
+<ActivateOnEquip stat="20" amount="-5">IncrementStat</ActivateOnEquip>
+<BagType>6</BagType>
+<FameBonus>7</FameBonus>
+<DisplayId>Dual Daggers</DisplayId>
+</Object>
+
+
+   <Object type="0x8510" id="idekk">
+      <Class>Projectile</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj11</File>
+            <Index>0x10</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj11</File>
+            <Index>0x20</Index>
+         </Texture>
+      </RandomTexture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+</Objects>

@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x0e32" id="Davy Jones">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>26</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>26</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="3">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>27</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.2">XMLEffect</Effect>
+      </AltTexture>
+      <AltTexture id="4">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>28</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="5">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>29</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="6">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>30</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/skull_shrine_death</DeathSound>
+      <Size>0</Size>
+      <MaxHitPoints>16000</MaxHitPoints>
+      <StasisImmune/>
+      <Defense>35</Defense>
+      <God/>
+      <Quest/>
+      <XpMult>1.75</XpMult>
+      <KeepDamageRecord/>
+      <Projectile id="0">
+         <ObjectId>Ghost Boss Slash</ObjectId>
+         <Speed>65</Speed>
+         <Damage>130</Damage>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="4">Bleeding</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Ghost Boss Spinner</ObjectId>
+         <Speed>45</Speed>
+         <Damage>140</Damage>
+         <Size>110</Size>
+         <LifetimeMS>3600</LifetimeMS>
+         <Boomerang/>
+         <ConditionEffect duration="4">Bleeding</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x0e2d" id="Captain Summoner">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x0e50" id="Ghost Pirate Sr">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>32</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.2">XMLEffect</Effect>
+      </AltTexture>
+      <NoMiniMap/>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <MaxHitPoints>1700</MaxHitPoints>
+      <Defense>15</Defense>
+      <HitSound>monster/ghosts_death</HitSound>
+      <DeathSound>monster/flaming_skulls_hit</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Ghost Sr Slash</ObjectId>
+         <Speed>60</Speed>
+         <Damage>80</Damage>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x0e36" id="Ghost Lanturn On">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Group>GhostShip Lamps</Group>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xac</Index>
+      </Texture>
+      <HitSound>monster/traps_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_hit</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Lanturn Blast</ObjectId>
+         <Speed>40</Speed>
+         <Damage>85</Damage>
+         <LifetimeMS>600</LifetimeMS>
+         <Size>140</Size>
+         <ConditionEffect duration="2">Paralyzed</ConditionEffect>
+      </Projectile>
+      <XpMult>0.0</XpMult>
+      <Size>120</Size>
+      <ShadowColor>0xfec937a</ShadowColor>
+      <MaxHitPoints>600</MaxHitPoints>
+      <Defense>5000</Defense>
+   </Object>
+   <Object type="0x0e35" id="Ghost Lanturn Off">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Group>GhostShip Lamps</Group>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xad</Index>
+      </Texture>
+      <HitSound>monster/traps_hit</HitSound>
+      <DeathSound>spell/fire_nova</DeathSound>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>120</Size>
+      <Defense>2</Defense>
+   </Object>
+   <Object type="0x0e41" id="Yellow Key">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xae</Index>
+      </Texture>
+      <Size>80</Size>
+      <MaxHitPoints>100</MaxHitPoints>
+      <NoMiniMap/>
+      <ShadowSize>80</ShadowSize>
+      <DeathSound>weapon/obsidian_dagger</DeathSound>
+   </Object>
+   <Object type="0x0e40" id="Red Key">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xaf</Index>
+      </Texture>
+      <Size>80</Size>
+      <MaxHitPoints>100</MaxHitPoints>
+      <NoMiniMap/>
+      <ShadowSize>80</ShadowSize>
+      <DeathSound>weapon/obsidian_dagger</DeathSound>
+   </Object>
+   <Object type="0x0e3f" id="Green Key">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xb6</Index>
+      </Texture>
+      <Size>80</Size>
+      <MaxHitPoints>100</MaxHitPoints>
+      <NoMiniMap/>
+      <ShadowSize>80</ShadowSize>
+      <DeathSound>weapon/obsidian_dagger</DeathSound>
+   </Object>
+   <Object type="0x0e3e" id="Purple Key">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xb7</Index>
+      </Texture>
+      <Size>80</Size>
+      <MaxHitPoints>100</MaxHitPoints>
+      <NoMiniMap/>
+      <ShadowSize>80</ShadowSize>
+      <DeathSound>weapon/obsidian_dagger</DeathSound>
+   </Object>
+   <Object type="0x0e2e" id="Yellow Opener">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xae</Index>
+      </Texture>
+      <Size>0</Size>
+      <MaxHitPoints>100</MaxHitPoints>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x0e30" id="Red Opener">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xaf</Index>
+      </Texture>
+      <Size>0</Size>
+      <MaxHitPoints>100</MaxHitPoints>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x0e33" id="Green Opener">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xb8</Index>
+      </Texture>
+      <Size>0</Size>
+      <MaxHitPoints>100</MaxHitPoints>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x0e34" id="Purple Opener">
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xb9</Index>
+      </Texture>
+      <Size>0</Size>
+      <MaxHitPoints>100</MaxHitPoints>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x0e4a" id="VDoor">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xba</Index>
+      </Texture>
+      <MaxHitPoints>10</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x0e49" id="HDoor">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <StasisImmune/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xbb</Index>
+      </Texture>
+      <MaxHitPoints>10</MaxHitPoints>
+      <XpMult>0.0</XpMult>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x0e3a" id="Violent Spirit">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>36</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/beholder_death</DeathSound>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <XpMult>0</XpMult>
+      <Enemy/>
+      <Size>0</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <Projectile>
+         <ObjectId>Ghostly Arrow</ObjectId>
+         <Speed>80</Speed>
+         <Damage>40</Damage>
+         <Size>50</Size>
+         <LifetimeMS>400</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0e48" id="Lost Soul">
+      <Class>Character</Class>
+      <Group>GhostShip Group</Group>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.0">
+         <Frame time="0.2">
+            <RandomTexture>
+               <Texture>
+                  <File>lofiObj3</File>
+                  <Index>0xbc</Index>
+               </Texture>
+               <Texture>
+                  <File>lofiObj3</File>
+                  <Index>0xbd</Index>
+               </Texture>
+               <Texture>
+                  <File>lofiObj3</File>
+                  <Index>0xbe</Index>
+               </Texture>
+            </RandomTexture>
+         </Frame>
+      </Animation>
+      <XpMult>0</XpMult>
+      <Size>90</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>30</Defense>
+      <Z>0.33</Z>
+      <DeathSound>monster/flaming_skulls_hit</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Spirit Bolt</ObjectId>
+         <Damage>40</Damage>
+         <Speed>35</Speed>
+         <Size>50</Size>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0e45" id="Ghost of Roger">
+      <Class>Character</Class>
+      <Group>GhostShip Group</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>33</Index>
+      </AnimatedTexture>
+      <XpMult>1.0</XpMult>
+      <Size>120</Size>
+      <MaxHitPoints>2300</MaxHitPoints>
+      <Defense>50</Defense>
+      <Z>0.15</Z>
+      <HitSound>monster/ghosts_death</HitSound>
+      <DeathSound>monster/flaming_skulls_hit</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Roger Blast</ObjectId>
+         <Speed>65</Speed>
+         <Damage>110</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Skull Bolt</ObjectId>
+         <Speed>70</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x0e47" id="Maggot Sack">
+      <Class>Character</Class>
+      <Group>GhostShip Group</Group>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <XpMult>0</XpMult>
+      <Size>0</Size>
+      <MaxHitPoints>200</MaxHitPoints>
+   </Object>
+   <Object type="0x0e46" id="Maggot">
+      <Class>Character</Class>
+      <Group>GhostShip Group</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>30</Index>
+      </AnimatedTexture>
+      <XpMult>1.0</XpMult>
+      <Size>40</Size>
+      <ShadowSize>85</ShadowSize>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Defense>2</Defense>
+      <HitSound>monster/blobs_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>30</Damage>
+         <Speed>0</Speed>
+         <Size>80</Size>
+         <LifetimeMS>200</LifetimeMS>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x0e44" id="School of Ghostfish">
+      <Class>Character</Class>
+      <Group>GhostShip Group</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <XpMult>1.0</XpMult>
+      <Size>110</Size>
+      <MaxHitPoints>1600</MaxHitPoints>
+      <Defense>3</Defense>
+      <Z>0.1</Z>
+      <HitSound>monster/cubes_death</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Fish Shot</ObjectId>
+         <Speed>40</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>1300</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x0e43" id="Zombie Pirate Sr">
+      <Class>Character</Class>
+      <Group>GhostShip Group</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>35</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0x50d71b</BloodColor>
+      <XpMult>1.0</XpMult>
+      <Size>110</Size>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>17</Defense>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/undead_hobbits_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Zombie Shot</ObjectId>
+         <Speed>55</Speed>
+         <Damage>66</Damage>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>110</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x0e42" id="Zombie Pirate Jr">
+      <Class>Character</Class>
+      <Group>GhostShip Group</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>32</Index>
+      </AnimatedTexture>
+      5171081
+      <XpMult>1.0</XpMult>
+      <Size>110</Size>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Defense>11</Defense>
+      <HitSound>monster/pirates_hit</HitSound>
+      <DeathSound>monster/undead_hobbits_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0x50d71b</BloodColor>
+      <Projectile id="0">
+         <ObjectId>Zombie Shot</ObjectId>
+         <Speed>33</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x0e31" id="Lil' Ghost Pirate">
+      <Class>Character</Class>
+      <Group>GhostShip Group</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>33</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars8x8rEncounters</File>
+            <Index>33</Index>
+         </AnimatedTexture>
+         <Effect particle="SwirlingMist" cooldown="0.2">XMLEffect</Effect>
+      </AltTexture>
+      <NoMiniMap/>
+      <XpMult>0.005</XpMult>
+      <Size>0</Size>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Defense>0</Defense>
+      <HitSound>monster/ghosts_death</HitSound>
+      <DeathSound>monster/flaming_skulls_hit</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Ghost Swipe</ObjectId>
+         <Speed>66</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>90</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x0e2f" id="GhostShip Rat">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Ghost Ship Rat</DisplayId>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/flayers_hit</DeathSound>
+      <XpMult>1.0</XpMult>
+      <Size>100</Size>
+      <MaxHitPoints>650</MaxHitPoints>
+      <Defense>5</Defense>
+      <Projectile id="0">
+         <ObjectId>Rat Tail</ObjectId>
+         <Speed>45</Speed>
+         <Damage>45</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1">Stunned</ConditionEffect>
+      </Projectile>
+   </Object>
+
+
+      <Object type="0x6509" id="Summius">
+           <Group>Summius</Group>
+           <Enemy/>
+           <Class>Character</Class>
+           <Texture>
+               <File>summius</File>
+               <Index>0x00</Index>
+           </Texture>
+           <HitSound>monster/stone_walls_hit</HitSound>
+           <DeathSound>monster/stone_walls_death</DeathSound>
+           <Size>120</Size>
+           <MaxHitPoints>40000000</MaxHitPoints>
+           <Defense>2000</Defense>
+           <XpMult>0</XpMult>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>300</Damage>
+               <Speed>200</Speed>
+               <LifetimeMS>10000</LifetimeMS>
+               <ConditionEffect duration="6">Stunned</ConditionEffect>
+               <ConditionEffect duration="12">Weak</ConditionEffect>
+           </Projectile>
+
+           <Projectile id="1">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>435</Damage>
+               <Speed>500</Speed>
+               <MultiHit/>
+               <ArmorPiercing/>
+               <LifetimeMS>37500</LifetimeMS>
+               <ConditionEffect duration="15">Confused</ConditionEffect>
+               <ConditionEffect duration="12">Unstable</ConditionEffect>
+           </Projectile>
+
+           <Projectile id="2">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>520</Damage>
+               <Speed>180</Speed>
+               <Wavy/>
+               <LifetimeMS>7200</LifetimeMS>
+           </Projectile>
+
+           <Projectile id="3">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>600</Damage>
+               <Speed>400</Speed>
+               <LifetimeMS>30000</LifetimeMS>
+               <ConditionEffect duration="10">ArmorBroken</ConditionEffect>
+               <ConditionEffect duration="10">Blind</ConditionEffect>
+           </Projectile>
+
+           <Projectile id="4">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>550</Damage>
+               <Speed>130</Speed>
+               <LifetimeMS>7200</LifetimeMS>
+               <ConditionEffect duration="8">Hallucinating</ConditionEffect>
+           </Projectile>
+
+           <Projectile id="5">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>500</Damage>
+               <Speed>200</Speed>
+               <LifetimeMS>12000</LifetimeMS>
+               <MultiHit/>
+               <Boomerang/>
+               <ConditionEffect duration="5">Drunk</ConditionEffect>
+               <ConditionEffect duration="10">Quiet</ConditionEffect>
+           </Projectile>
+
+           <Projectile id="6">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>1500</Damage>
+               <Speed>70</Speed>
+               <LifetimeMS>7000</LifetimeMS>
+               <MultiHit/>
+               <ArmorPiercing/>
+               <Wavy/>
+               <ConditionEffect duration="15">Blind</ConditionEffect>
+               <ConditionEffect duration="30">Bleeding</ConditionEffect>
+           </Projectile>
+
+           <Projectile id="7">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>1000</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>1100</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>1200</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>1300</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>1400</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>2500</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>3000</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>4000</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>5000</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>5500</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>6000</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>6500</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <Projectile id="0">
+               <ObjectId>White Bullet</ObjectId>
+               <Damage>7000</Damage>
+               <Speed>10</Speed>
+               <LifetimeMS>6000</LifetimeMS>
+               <ConditionEffect duration="20">Quiet</ConditionEffect>
+           </Projectile>
+           <DisplayId>{Summius}</DisplayId>
+       </Object>
+
+       <Object type="0x652f" id="FED">
+           <Enemy/>
+           <Class>Character</Class>
+           <Texture>
+               <File>fireelemdrag</File>
+               <Index>0x00</Index>
+           </Texture>
+           <HitSound>monster/elves_hit</HitSound>
+           <DeathSound>monster/elves_death</DeathSound>
+           <Size>150</Size>
+           <MaxHitPoints>100000</MaxHitPoints>
+           <Defense>140</Defense>
+           <Quest/>
+           <Level>20</Level>
+           <XpMult>3.4</XpMult>
+           <Projectile id="0">
+               <ObjectId>f1</ObjectId>
+               <Damage>100</Damage>
+               <Speed>180</Speed>
+               <Size>60</Size>
+               <LifetimeMS>500</LifetimeMS>
+           </Projectile>
+           <Projectile id="1">
+               <ObjectId>f2</ObjectId>
+               <Damage>500</Damage>
+               <Speed>60</Speed>
+               <Size>60</Size>
+               <LifetimeMS>2000</LifetimeMS>
+               <ConditionEffect duration="5">Bleeding</ConditionEffect>
+               <ConditionEffect duration="5">Slowed</ConditionEffect>
+           </Projectile>
+           <Projectile id="2">
+               <ObjectId>f3</ObjectId>
+               <Damage>35</Damage>
+               <Speed>200</Speed>
+               <Size>60</Size>
+               <ConditionEffect duration="4">Speedy</ConditionEffect>
+               <ConditionEffect duration="4">Confused</ConditionEffect>
+               <LifetimeMS>600</LifetimeMS>
+           </Projectile>
+           <Projectile id="3">
+               <ObjectId>f4</ObjectId>
+               <Damage>15</Damage>
+               <Speed>200</Speed>
+               <Size>60</Size>
+               <ConditionEffect duration="5">Quiet</ConditionEffect>
+               <ConditionEffect duration="7">Bleeding</ConditionEffect>
+               <ConditionEffect duration="5">ArmorBroken</ConditionEffect>
+               <LifetimeMS>750</LifetimeMS>
+           </Projectile>
+           <Projectile id="4">
+               <ObjectId>f5</ObjectId>
+               <Damage>22</Damage>
+               <Speed>250</Speed>
+               <Size>60</Size>
+               <Boomerang/>
+               <MultiHit/>
+               <ConditionEffect duration="5">Confused</ConditionEffect>
+               <ConditionEffect duration="6.5">Weak</ConditionEffect>
+               <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+               <LifetimeMS>700</LifetimeMS>
+           </Projectile>
+           <Projectile id="5">
+               <ObjectId>f6</ObjectId>
+               <Damage>50</Damage>
+               <Speed>170</Speed>
+               <Size>60</Size>
+               <LifetimeMS>800</LifetimeMS>
+               <ConditionEffect duration="3">Bleeding</ConditionEffect>
+               <ConditionEffect duration="7">Sick</ConditionEffect>
+           </Projectile>
+           <Projectile id="6">
+               <ObjectId>f7</ObjectId>
+               <Damage>75</Damage>
+               <Speed>160</Speed>
+               <Size>60</Size>
+               <LifetimeMS>800</LifetimeMS>
+               <ConditionEffect duration="4">Bleeding</ConditionEffect>
+               <ConditionEffect duration="8">Sick</ConditionEffect>
+               <ConditionEffect duration="4">Confused</ConditionEffect>
+           </Projectile>
+           <Projectile id="7">
+               <ObjectId>f8</ObjectId>
+               <Damage>100</Damage>
+               <Speed>150</Speed>
+               <Size>60</Size>
+               <LifetimeMS>800</LifetimeMS>
+               <ConditionEffect duration="5">Bleeding</ConditionEffect>
+               <ConditionEffect duration="9">Sick</ConditionEffect>
+               <ConditionEffect duration="50">Confused</ConditionEffect>
+               <ConditionEffect duration="10">Curse</ConditionEffect>
+           </Projectile>
+           <Projectile id="8">
+               <ObjectId>f9</ObjectId>
+               <Damage>145</Damage>
+               <Speed>170</Speed>
+               <Size>60</Size>
+               <LifetimeMS>1000</LifetimeMS>
+               <ConditionEffect duration="6">Slowed</ConditionEffect>
+               <ConditionEffect duration="4">ArmorBroken</ConditionEffect>
+           </Projectile>
+           <Projectile id="9">
+               <ObjectId>f10</ObjectId>
+               <Damage>180</Damage>
+               <Speed>160</Speed>
+               <Size>60</Size>
+               <Boomerang/>
+               <MultiHit/>
+               <LifetimeMS>1400</LifetimeMS>
+               <ConditionEffect duration="7">Unstable</ConditionEffect>
+           </Projectile>
+           <Projectile id="10">
+               <ObjectId>f11</ObjectId>
+               <Damage>185</Damage>
+               <Speed>160</Speed>
+               <Size>60</Size>
+               <LifetimeMS>1300</LifetimeMS>
+               <ConditionEffect duration="12">Weak</ConditionEffect>
+               <ConditionEffect duration="8">Unstable</ConditionEffect>
+           </Projectile>
+           <DisplayId>{Magamitus, Elemental of Draconic Fire}</DisplayId>
+       </Object>
+
+
+</Objects>
